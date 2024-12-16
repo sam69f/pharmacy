@@ -1,0 +1,639 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  nav ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul.navbar li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  building{
+    width: 100px;
+  }
+  /* Main Image Styles */
+  #main-image {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    
+  }
+  
+  #main-image img {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  #main-image h2 {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  #main-image p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Section Image Styles */
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Bullet Point List */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Numbered List */
+  ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
+  /* About Us Page Styles */
+  #branches, #summary {
+    padding: 1rem;
+  }
+  
+  .branch {
+    margin-bottom: 2rem;
+  }
+  
+  .branch-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  tfoot {
+    background-color: #f4f4f4;
+  }
+  
+  /* Services Page Styles */
+  #services-introduction, #services-images {
+    padding: 1rem;
+  }
+  
+  .service {
+    margin-bottom: 1rem;
+  }
+  
+  .service-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Doctors Page Styles */
+  #doctors {
+    padding: 1rem;
+  }
+  
+  .doctor {
+    margin-bottom: 1rem;
+  }
+  
+  .doctor-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Consulting Reservation Page Styles */
+  #reservation-form {
+    padding: 1rem;
+  }
+  
+  /* Pharmacy Page Styles */
+  #pharmacy-form {
+    padding: 1rem;
+  }
+  
+  select, input[type="text"], input[type="number"] {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Navigation Bar Styles */
+  nav {
+    background-color: #333;
+  }
+  
+  .navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    background-color: #575757;
+  }
+  
+  /* Responsive Navigation Bar */
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .navbar a {
+        padding: 0.75rem;
+    }
+  }
+  
+  
+  /* Doctors Page Styles */
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 1rem;
+  }
+  
+  .doctor-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .doctor-img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    margin: 0.5rem 0;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Services Page Styles */
+  #services-introduction {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  #services-images {
+    padding: 1rem;
+  }
+  
+  .service-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .service {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    flex: 1 1 300px; /* Makes the boxes responsive */
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  #patient-registration {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+  /* Consulting Reservation Page Styles */
+  #reservation-form {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="time"],
+  textarea,
+  select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  /* Pharmacy Page Styles */
+  #pharmacy-form {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="number"],
+  textarea,
+  select {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Contact Us Page Styles */
+  #contact-form {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Social Media Links */
+  footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer ul.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  footer ul.social-media li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  footer ul.social-media li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  footer ul.social-media li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1, footer p {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page Sections */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #007BFF;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #f4f4f4;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Flexbox and Grid */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.flex-container div {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-container div {
+  background: white;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.grid-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #110f0f;
+}
+
+
+  
+  

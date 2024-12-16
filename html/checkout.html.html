@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital - Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link rel="apple-touch-icon" sizes="180x180" href="logo/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="logo/android-chrome-384x384.png">
+<link rel="icon" type="image/png" sizes="16x16" href="logo/apple-touch-icon.png">
+<link rel="manifest" href="logo/browserconfig.xml">
+<link rel="mask-icon" href="logo/favicon-16x16.png" color="#5bbad5">
+<meta name="logo" content="logo">
+<meta name="logo" content="logo">
+<body>
+    <header>
+        <h1>Checkout</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="consulting.html">Consultation</a>
+            <a href="pharmacy.html">Pharmacy</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Your Order</h2>
+        <table id="orderTable">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="orderItems"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="orderTotal">0</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h2>Enter Your Details</h2>
+        <form id="checkoutForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <label for="payment">Payment Info:</label>
+            <input type="text" id="payment" required>
+            <button type="submit">Pay</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2023 Hospital. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('checkoutForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your purchase!');
+        });
+    </script>
+</body>
+</html>

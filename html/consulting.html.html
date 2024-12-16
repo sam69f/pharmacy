@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/apple-touch-icon.png">
+    <link rel="manifest" href="logo/browserconfig.xml">
+    <link rel="mask-icon" href="logo/favicon-16x16.png" color="#5bbad5">
+    <meta name="logo" content="logo">
+    <meta name="logo" content="logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Reservation - Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Reserve a consultation</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="consulting.html">Consultation</a>
+            <a href="pharmacy.html">Pharmacy</a>
+        </nav>
+    </header>
+
+    <section id="reservation-form">
+        <h2>Reserve a Doctor for Consultation</h2>
+        <form action="#" method="post">
+            <!-- Patient Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+            <!-- Department Selection -->
+            <label for="department">Select Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Choose a department</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="oncology">Oncology</option>
+            </select>
+            
+            <!-- Doctor Selection -->
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" name="doctor" required>
+                <option value="">Choose a doctor</option>
+                <option value="dr-smith">Dr. John Smith (Cardiology)</option>
+                <option value="dr-white">Dr. Lisa White (Orthopedics)</option>
+                <option value="dr-johnson">Dr. Michael Johnson (Oncology)</option>
+                <option value="dr-lee">Dr. Sarah Lee (Pediatrics)</option>
+            </select>
+            
+            <!-- Appointment Date -->
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <!-- Time Selection -->
+            <label for="time">Preferred Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <!-- Additional Notes -->
+            <label for="notes">Additional Notes (Optional):</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Any specific issues or requirements?"></textarea>
+            
+            <!-- Submit Button -->
+            <input type="submit" value="Reserve Appointment">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Horizon Care Hospital. All rights reserved.</p>
+        <ul class="social-media">
+            <li><a href="#" target="_blank">Facebook</a></li>
+            <li><a href="#" target="_blank">Twitter</a></li>
+            <li><a href="#" target="_blank">Instagram</a></li>
+            <li><a href="#" target="_blank">LinkedIn</a></li>
+        </ul
+    </footer>
+</body>
+</html>
